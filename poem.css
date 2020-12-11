@@ -1,0 +1,85 @@
+@keyframes buttoncolor {
+    0% {
+        background-color: #864cbf
+    }
+    10% {
+        background-color: #f35
+    }
+    20% {
+        background-color: grey;
+    }
+    30% {
+        background-color: rosybrown;
+    }
+    40% {
+        background-color: #eb670f;
+    }
+    50% {
+        background-color: peru;
+    }
+    60% {
+        background-color: navy;
+        color: white;
+    }
+    70% {
+        background-color: yellow;
+        color: black;
+    }
+    80% {
+        background-color: yellowgreen;
+    }
+    90% {
+        background-color: #66bf39;
+    }
+    100% {
+        background-color: #45a3e5;
+    }
+}
+
+body {
+    background-color: tomato;
+}
+
+h1 {
+    margin: auto;
+    font-size: 40pt;
+    text-align: center;
+    width: 400px;
+    
+}
+.intro {
+    margin: auto;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    color: pink;
+    font-size: 25pt;
+    border-style: double;
+    border-color: black;
+}
+#heart {
+    display: block;
+    margin: auto;
+    width: 15%;
+    height: 15%;
+}
+#mainbutton {
+    position: absolute;
+    left: 90%;
+    top: 87%;
+    z-index: 10;
+    border-radius: 40%;
+    width: 150px;
+    height: 100px;
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+    color: black;
+    background-color: lightseagreen;
+}
+#mainbutton:hover {
+    transform: scale(1.2) perspective(1px);
+    -webkit-animation: buttoncolor 20s infinite;
+    animation: buttoncolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}

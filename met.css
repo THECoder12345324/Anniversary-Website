@@ -1,0 +1,120 @@
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    10% {
+        background-color: #66bf39
+    }
+
+    20% {
+        background-color: yellowgreen
+    }
+
+    30% {
+        background-color: yellow;
+    }
+
+    40% {
+        background-color: navy;
+    }
+
+    50% {
+        background-color: peru;
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    70% {
+        background-color: rosybrown;
+    }
+
+    80% {
+        background-color: grey;
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+@keyframes buttoncolor {
+    0% {
+        background-color: #864cbf
+    }
+    10% {
+        background-color: #f35
+    }
+    20% {
+        background-color: grey;
+    }
+    30% {
+        background-color: rosybrown;
+    }
+    40% {
+        background-color: #eb670f;
+    }
+    50% {
+        background-color: peru;
+    }
+    60% {
+        background-color: navy;
+        color: white;
+    }
+    70% {
+        background-color: yellow;
+        color: black;
+    }
+    80% {
+        background-color: yellowgreen;
+    }
+    90% {
+        background-color: #66bf39;
+    }
+    100% {
+        background-color: #45a3e5;
+    }
+}
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+#ppt {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+#datitle {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 25pt;
+}
+#mainbutton {
+    position: absolute;
+    left: 90%;
+    top: 87%;
+    z-index: 10;
+    border-radius: 40%;
+    width: 150px;
+    height: 100px;
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+    color: black;
+    background-color: lightseagreen;
+}
+#mainbutton:hover {
+    transform: scale(1.2) perspective(1px);
+    -webkit-animation: buttoncolor 20s infinite;
+    animation: buttoncolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
